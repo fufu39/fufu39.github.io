@@ -1,0 +1,94 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Wall</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;           
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(243, 230, 241);
+        }
+
+        .photo{
+            width: 88%;
+            height: 75%;
+            display: flex;
+        }
+
+        .box{
+            flex: 1;
+            overflow: hidden;
+            transition: 0.9s;
+            margin: 0 10px;
+            box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            border: 2px solid #fff;
+            background-color: #fff;
+        }
+
+        .box img{
+            width: 100%;
+            height: 85%;
+            /* 裁剪/缩放图片填充整个容器 */
+            object-fit: cover;
+            transition: 0.9s;
+        }
+
+        .box span{
+            font: 100 21px 'centaur';
+            text-align: center;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:hover{
+            flex-basis: 65%;
+        }
+
+        .box:hover img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="photo">
+        <div class="box">
+            <img src="./1.png">
+            <span><i>「Rem」</i></span>
+        </div>
+        <div class="box">
+            <img src="./2.jpg">
+            <span><i>「Hatsune Miku」</i></span>
+        </div>
+        <div class="box">
+            <img src="./3.jpg">
+            <span><i>「Code：002」</i></span>
+        </div>
+        <div class="box">
+            <img src="./4.jpeg">
+            <span><i>「Gotō Hitori」</i></span>
+        </div>
+        <div class="box">
+            <img src="./5.png">
+            <span><i>「Sword Art Online」</i></span>
+        </div>
+        <div class="box">
+            <img src="./6.jpg">
+            <span><i>「Atri」</i></span>
+        </div>
+        <div class="box">
+            <img src="./7.jpg">
+            <span><i>「Hoshino Ai」</i></span>
+        </div>
+    </div>
+</body>
